@@ -1,0 +1,70 @@
+{
+  "country_code": "VN",
+  "country_name": "Vietnam",
+  "rules": [
+    {
+      "rule_id": "VN-DOC-001",
+      "description": "Medical receipt required for all claim types",
+      "rule_type": "document_requirement",
+      "severity": "hard",
+      "parameters": { "document_type": "medical_receipt", "required_for": "all" },
+      "effective_date": "2024-01-01"
+    },
+    {
+      "rule_id": "VN-DOC-002",
+      "description": "Hospital certificate required for inpatient claims",
+      "rule_type": "document_requirement",
+      "severity": "hard",
+      "parameters": { "document_type": "hospital_certificate", "required_for": "INPATIENT" },
+      "effective_date": "2024-01-01"
+    },
+    {
+      "rule_id": "VN-DOC-003",
+      "description": "ID card copy required for all claim types",
+      "rule_type": "document_requirement",
+      "severity": "hard",
+      "parameters": { "document_type": "id_card_copy", "required_for": "all" },
+      "effective_date": "2024-01-01"
+    },
+    {
+      "rule_id": "VN-SLA-001",
+      "description": "All claims must be processed within 10 business days",
+      "rule_type": "sla_check",
+      "severity": "soft",
+      "parameters": { "business_days": 10, "applies_to": "all" },
+      "effective_date": "2024-01-01"
+    },
+    {
+      "rule_id": "VN-WAIT-001",
+      "description": "General waiting period of 30 days from policy start",
+      "rule_type": "waiting_period",
+      "severity": "hard",
+      "parameters": { "days": 30, "condition_type": "general" },
+      "effective_date": "2024-01-01"
+    },
+    {
+      "rule_id": "VN-WAIT-002",
+      "description": "Pre-existing condition waiting period of 365 days",
+      "rule_type": "waiting_period",
+      "severity": "hard",
+      "parameters": { "days": 365, "condition_type": "pre_existing" },
+      "effective_date": "2024-01-01"
+    },
+    {
+      "rule_id": "VN-MASK-001",
+      "description": "Full name must be masked in external reports — show first and last initial only",
+      "rule_type": "data_masking",
+      "severity": "hard",
+      "parameters": { "field": "member_name", "pattern": "X. ****** X.", "description": "Show first and last initial only" },
+      "effective_date": "2024-01-01"
+    },
+    {
+      "rule_id": "VN-COV-001",
+      "description": "Maternity must be covered for policies active longer than 12 months",
+      "rule_type": "coverage_mandate",
+      "severity": "hard",
+      "parameters": { "applies_to": "MATERNITY", "condition": "policy_duration_months > 12" },
+      "effective_date": "2024-01-01"
+    }
+  ]
+}

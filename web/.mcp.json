@@ -1,0 +1,8 @@
+{
+    "mcpServers": {
+      "git": {
+        "command": "/opt/homebrew/bin/uvx",
+        "args": ["mcp-server-git", "--repository", "/Users/thanhluan/Documents/pumpkin"]
+      }
+    }
+  }

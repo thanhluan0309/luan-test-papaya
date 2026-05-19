@@ -1,0 +1,47 @@
+{
+  "country_code": "SG",
+  "country_name": "Singapore",
+  "_note": "Skeleton config — demonstrates zero-code extensibility. Add rules to activate this country.",
+  "rules": [
+    {
+      "rule_id": "SG-DOC-001",
+      "description": "Medical receipt required for all claim types",
+      "rule_type": "document_requirement",
+      "severity": "hard",
+      "parameters": { "document_type": "medical_receipt", "required_for": "all" },
+      "effective_date": "2025-01-01"
+    },
+    {
+      "rule_id": "SG-DOC-002",
+      "description": "Medisave claim form required for inpatient claims (MediShield Life requirement)",
+      "rule_type": "document_requirement",
+      "severity": "hard",
+      "parameters": { "document_type": "medisave_claim_form", "required_for": "INPATIENT" },
+      "effective_date": "2025-01-01"
+    },
+    {
+      "rule_id": "SG-SLA-001",
+      "description": "All claims must be processed within 7 business days (MAS requirement)",
+      "rule_type": "sla_check",
+      "severity": "soft",
+      "parameters": { "business_days": 7, "applies_to": "all" },
+      "effective_date": "2025-01-01"
+    },
+    {
+      "rule_id": "SG-WAIT-001",
+      "description": "General waiting period of 30 days from policy start",
+      "rule_type": "waiting_period",
+      "severity": "hard",
+      "parameters": { "days": 30, "condition_type": "general" },
+      "effective_date": "2025-01-01"
+    },
+    {
+      "rule_id": "SG-MASK-001",
+      "description": "NRIC must be masked — show first letter and last 4 characters only",
+      "rule_type": "data_masking",
+      "severity": "hard",
+      "parameters": { "field": "national_id", "pattern": "X****XXXX", "description": "Show first letter and last 4 chars only" },
+      "effective_date": "2025-01-01"
+    }
+  ]
+}
