@@ -4,33 +4,33 @@ A collection of 14 hands-on engineering challenges built with **Next.js 16**, **
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Framework | Next.js 16 (App Router) |
-| UI | React 19 + Tailwind CSS v4 |
-| Language | TypeScript 5 |
-| Charts | Recharts |
-| Testing | Vitest |
-| Runtime scripts | tsx |
+| Layer           | Technology                 |
+| --------------- | -------------------------- |
+| Framework       | Next.js 16 (App Router)    |
+| UI              | React 19 + Tailwind CSS v4 |
+| Language        | TypeScript 5               |
+| Charts          | Recharts                   |
+| Testing         | Vitest                     |
+| Runtime scripts | tsx                        |
 
 ## Challenges
 
-| # | Title | Difficulty | Est. Time |
-|---|---|---|---|
-| 01 | Insurance Plan Comparison | Beginner | 2–3h |
-| 02 | Claims Data Cleanup & Report | Beginner | 2–3h |
-| 03 | Claim Notification Email Templates | Beginner | 2–3h |
-| 04 | Insurance Glossary Search | Beginner | 2–3h |
-| 05 | Policy Summary Generator | Beginner | 2–4h |
-| 06 | Policy Benefits Calculator | Intermediate | 2–4h |
-| 07 | Claims Intake Wizard | Intermediate | 3–5h |
-| 08 | Medical Document Extractor | Advanced | 4–6h |
-| 09 | Claims Analytics Dashboard | Intermediate | 3–5h |
-| 10 | Fraud Detection Scoring Engine | Advanced | 4–6h |
-| 11 | Claim Assessment AI Agent | Advanced | 6–8h |
-| 12 | Multi-Country Regulatory Rule Engine | Advanced | 4–6h |
-| 13 | Partner Integration SDK | Advanced | 5–7h |
-| 14 | Claims Workflow Orchestrator | Advanced | 5–8h |
+| #   | Title                                | Difficulty   | Est. Time |
+| --- | ------------------------------------ | ------------ | --------- |
+| 01  | Insurance Plan Comparison            | Beginner     | 2–3h      |
+| 02  | Claims Data Cleanup & Report         | Beginner     | 2–3h      |
+| 03  | Claim Notification Email Templates   | Beginner     | 2–3h      |
+| 04  | Insurance Glossary Search            | Beginner     | 2–3h      |
+| 05  | Policy Summary Generator             | Beginner     | 2–4h      |
+| 06  | Policy Benefits Calculator           | Intermediate | 2–4h      |
+| 07  | Claims Intake Wizard                 | Intermediate | 3–5h      |
+| 08  | Medical Document Extractor           | Advanced     | 4–6h      |
+| 09  | Claims Analytics Dashboard           | Intermediate | 3–5h      |
+| 10  | Fraud Detection Scoring Engine       | Advanced     | 4–6h      |
+| 11  | Claim Assessment AI Agent            | Advanced     | 6–8h      |
+| 12  | Multi-Country Regulatory Rule Engine | Advanced     | 4–6h      |
+| 13  | Partner Integration SDK              | Advanced     | 5–7h      |
+| 14  | Claims Workflow Orchestrator         | Advanced     | 5–8h      |
 
 Each challenge lives under `app/challenge-XX/` (UI) and `lib/challenge-XX/` (logic/data).
 
@@ -82,7 +82,7 @@ npm run generate-data
 Challenges 08 and 11 call an LLM API for document extraction and claim assessment. Create a `.env.local` file at the project root:
 
 ```env
-ANTHROPIC_API_KEY=your_api_key_here
+OPENROUTER_API_KEY=your_api_key_here
 ```
 
 Without this key, those two challenges will return an error from their API routes. All other challenges run fully offline.
