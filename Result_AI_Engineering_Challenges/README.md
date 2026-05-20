@@ -1,6 +1,8 @@
 # AI Engineering Challenges — Insurance Domain
 
-A collection of 14 hands-on engineering challenges built with **Next.js 16**, **React 19**, and **TypeScript**, covering real-world insurance & InsurTech scenarios from data cleaning to AI agents.
+**Live demo:** [https://luan-papaya-chanllenge.vercel.app](https://luan-papaya-chanllenge.vercel.app)
+
+A collection of 15 hands-on engineering challenges built with **Next.js 16**, **React 19**, and **TypeScript**, covering real-world insurance & InsurTech scenarios from data cleaning to AI agents.
 
 ## Tech Stack
 
@@ -31,6 +33,7 @@ A collection of 14 hands-on engineering challenges built with **Next.js 16**, **
 | 12  | Multi-Country Regulatory Rule Engine | Advanced     | 4–6h      |
 | 13  | Partner Integration SDK              | Advanced     | 5–7h      |
 | 14  | Claims Workflow Orchestrator         | Advanced     | 5–8h      |
+| 15  | Multi-Tenant Configuration Platform  | Advanced     | 5–8h      |
 
 Each challenge lives under `app/challenge-XX/` (UI) and `lib/challenge-XX/` (logic/data).
 
