@@ -15,7 +15,7 @@ const challenges = [
   { num: "12", title: "Multi-Country Regulatory Rule Engine", difficulty: "Advanced", hours: "4–6h",  ready: true  },
   { num: "13", title: "Partner Integration SDK",          difficulty: "Advanced",     hours: "5–7h",  ready: true  },
   { num: "14", title: "Claims Workflow Orchestrator",     difficulty: "Advanced",     hours: "5–8h",  ready: true  },
-  { num: "15", title: "Multi-Tenant Configuration Platform", difficulty: "Advanced",  hours: "5–8h",  ready: false },
+  { num: "15", title: "Multi-Tenant Configuration Platform", difficulty: "Advanced",  hours: "5–8h",  ready: true  },
 ];
 
 const difficultyConfig: Record<string, { badge: string; accent: string; dot: string }> = {

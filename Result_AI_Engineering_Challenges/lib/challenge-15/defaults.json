@@ -1,0 +1,56 @@
+{
+  "config": {
+    "max_claims_per_month": 100,
+    "max_claim_amount": 100000,
+    "claim_review_sla_days": 10,
+    "currency": "THB",
+    "max_documents_per_claim": 5,
+    "auto_approve_threshold": 5000,
+    "data_retention_days": 365
+  },
+  "featureFlags": {
+    "api_access": false,
+    "bulk_claim_upload": false,
+    "ai_fraud_detection": false,
+    "real_time_notifications": false,
+    "multi_currency_support": false,
+    "advanced_analytics": false,
+    "document_ocr": false,
+    "custom_workflows": false
+  },
+  "planOverrides": {
+    "basic": {
+      "config": {
+        "max_claims_per_month": 50,
+        "max_claim_amount": 50000
+      }
+    },
+    "standard": {
+      "config": {
+        "max_claims_per_month": 500,
+        "max_claim_amount": 300000
+      },
+      "featureFlags": {
+        "api_access": true,
+        "bulk_claim_upload": true
+      }
+    },
+    "enterprise": {
+      "config": {
+        "max_claims_per_month": 99999,
+        "max_claim_amount": 5000000,
+        "auto_approve_threshold": 50000
+      },
+      "featureFlags": {
+        "api_access": true,
+        "bulk_claim_upload": true,
+        "ai_fraud_detection": true,
+        "real_time_notifications": true,
+        "multi_currency_support": true,
+        "advanced_analytics": true,
+        "document_ocr": true,
+        "custom_workflows": true
+      }
+    }
+  }
+}
